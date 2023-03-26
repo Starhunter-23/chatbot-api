@@ -72,7 +72,7 @@ public class SpringBootRunTest {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         HttpPost post = new HttpPost("https://open.aiproxy.xyz/v1/completions");
         post.addHeader("Content-Type", "application/json");
-        post.addHeader("Authorization", "Bearer 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");
+        post.addHeader("Authorization", "Bearer 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");
         String paramJson = "{\"model\":\"text-davinci-003\",\"prompt\":\"帮我写一个java冒泡排序\",\"temperature\":0,\"max_tokens\":1024}";
         StringEntity stringEntity = new StringEntity(paramJson, ContentType.create("text/json", "utf-8"));
         post.setEntity(stringEntity);
